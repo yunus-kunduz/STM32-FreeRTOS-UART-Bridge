@@ -1,0 +1,20 @@
+# STM32CubeIDE / Eclipse
+.project
+.cproject
+.settings/
+Debug/
+Release/
+*.launch
+
+# VSCode
+.vscode/
+
+# Derleme Artıkları
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.list
