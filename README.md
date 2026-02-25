@@ -44,4 +44,15 @@ During the development process, hardware limitations and RTOS conflicts were enc
 * **Solution:** When the `COUNT: X\n` text is sent at a 115200 Baud Rate, all bytes in the packet reach the receiver in a fraction of a millisecond. Because the processor matched this speed and toggled the LED multiple times for each character, the human eye couldn't perceive it, making the LED appear constantly off (or very dim). An **`osDelay(50);`** (50 milliseconds RTOS delay) was added right below the `HAL_GPIO_TogglePin` command inside the `ReceiverTask` to slow down the hardware response to a frequency visible to the eye.
 
 ---
+
+### Hardware Wiring Diagram
+
+![Hardware Wiring Diagram](assets/hardware-setup.jpg)
+
+| Nucleo (Transmitter) | Demedukit (Receiver) | Description |
+| :--- | :--- | :--- |
+| GND | GND | Common ground reference (Critical) |
+| PA9 (TX / D8 Pin) | S1 (RX Pin) | Data transmission line |
+
+---
 *Development: [yunus-kunduz](https://github.com/yunus-kunduz)*
