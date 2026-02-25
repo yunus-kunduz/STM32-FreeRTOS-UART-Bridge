@@ -47,7 +47,7 @@ During the development process, hardware limitations and RTOS conflicts were enc
 
 ### Hardware Wiring Diagram
 
-![Hardware Wiring Diagram](assets/hardware-setup.jpg)
+![Hardware Wiring Diagram](assets/hardware-connection.jpeg)
 
 | Nucleo (Transmitter) | Demedukit (Receiver) | Description |
 | :--- | :--- | :--- |
